@@ -386,6 +386,7 @@
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/ScreenShotHelper.cs"
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/SliceHelper.cs"
 "Assets/Scripts/CursorController.cs"
+"Assets/Scripts/CursorControls.cs"
 -langversion:9.0
 
 /deterministic
