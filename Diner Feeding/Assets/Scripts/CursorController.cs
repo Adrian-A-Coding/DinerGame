@@ -1,17 +1,24 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MouseController : MonoBehaviour
 {
+    [SerializeField]
+    private InputAction mouseClick;
+    [SerializeField]
+    private float mouseDragPhysicsSpeed = 10;
+    [SerializeField]
+    private float mouseDragSpeed = 0.1f;
+
+    private WaitForFixedUpdate fixedUpdate = new WaitForFixedUpdate();
+    private Vector3 velocity = Vector3.zero;
+
     public Texture2D cursor;
     public Texture2D cursorClicked;
 
-    private CursorControls controls;
-
     private void Awake()
     {
-        controls = new CursorControls(); //Instatiate new controls
         //Setting the base cursor to the default texture
         CursorChanged(cursor);
         Cursor.lockState = CursorLockMode.Confined; //Lock cursor to game screen
@@ -19,18 +26,42 @@ public class MouseController : MonoBehaviour
 
     private void OnEnable()
     {
-        controls.Enable();
+        mouseClick.Enable();
+        mouseClick.performed += MousePressed;
     }
 
     private void OnDisable()
     {
-        controls.Disable();
+        mouseClick.performed -= MousePressed;
+        mouseClick.Disable();
     }
 
-    private void Start()
-    {
-        controls.Mouse.Click.started += _ => StartedClick();
-        controls.Mouse.Click.performed += _ => EndedClick();
+    private void MousePressed(InputAction.CallbackContext context) {
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        RaycastHit hit;
+        if(Physics.Raycast(ray, out hit)) { //If and object is hit store it
+            if(hit.collider != null) { //Check that it must have a collider
+                StartCoroutine(DragUpdate(hit.collider.gameObject));
+            }
+        }
+    }
+
+    private IEnumerator DragUpdate(GameObject clickedObject) {
+        clickedObject.TryGetComponent<Rigidbody>(out var rb);
+        float initialDistance = Vector3.Distance(clickedObject.transform.position, Camera.main.transform.position);
+        while (mouseClick.ReadValue<float>() != 0) {
+            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            if (rb != null) {
+                Vector3 direction = ray.GetPoint(initialDistance) - clickedObject.transform.position;
+                rb.velocity = direction * mouseDragPhysicsSpeed;
+                yield return fixedUpdate;
+            }
+            else {
+                clickedObject.transform.position = Vector3.SmoothDamp(clickedObject.transform.position, 
+                    ray.GetPoint(initialDistance), ref velocity, mouseDragSpeed);
+                yield return null;
+            }
+        }
     }
 
     private void StartedClick() {
