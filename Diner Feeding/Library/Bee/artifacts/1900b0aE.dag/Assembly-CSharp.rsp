@@ -387,6 +387,8 @@
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/SliceHelper.cs"
 "Assets/Scripts/CursorController.cs"
 "Assets/Scripts/IDraggable.cs"
+"Assets/Scripts/PanScript.cs"
+"Assets/Scripts/Snapping.cs"
 -langversion:9.0
 
 /deterministic
