@@ -386,8 +386,9 @@
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/ScreenShotHelper.cs"
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/SliceHelper.cs"
 "Assets/Scripts/CursorController.cs"
+"Assets/Scripts/CursorControls.cs"
+"Assets/Scripts/IDetail.cs"
 "Assets/Scripts/IDraggable.cs"
-"Assets/Scripts/PanScript.cs"
 "Assets/Scripts/Snapping.cs"
 -langversion:9.0
 

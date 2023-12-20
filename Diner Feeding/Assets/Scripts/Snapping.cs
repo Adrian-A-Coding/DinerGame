@@ -6,23 +6,24 @@ public class Snapping : MonoBehaviour, IDraggable
     private Rigidbody rb;
     private Vector3 originalPoint;
 
-    private void Start()
+    private void Awake()
     {
         originalPoint = transform.position; //Store the objects starting location followed by rotation
         rb = GetComponent<Rigidbody>(); //Get the objects rigid body to store for velocity
     }
 
-    public void onStartDrag()
+    public void OnStartDrag()
     {
         Debug.Log("Dragging started");
         rb.useGravity = false;
     }
     //Likely move these two to their respective scripts for the object
-    public void onEndDrag()
+    public void OnEndDrag()
     {
         snap();//By default at the end of dragging cause the snap
         rb.velocity = Vector3.zero;
         rb.useGravity = true;
+        Debug.Log("Dragging End");
     }
 
     public void snap() {

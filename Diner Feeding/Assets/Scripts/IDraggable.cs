@@ -1,4 +1,4 @@
 public interface IDraggable {
-    void onStartDrag();
-    void onEndDrag();
+    void OnStartDrag();
+    void OnEndDrag();
 }
