@@ -1,39 +1,24 @@
 using UnityEngine;
 
-public class Snapping : MonoBehaviour, IDraggable
+public class Snapping : MonoBehaviour
 {
-    public GameObject[] snapPoints;
-    private Rigidbody rb;
-    private Vector3 originalPoint;
+    private Vector3 startPoint;
+    [SerializeField]
+    private GameObject[] snapPoints;
 
     private void Awake()
     {
-        originalPoint = transform.position; //Store the objects starting location followed by rotation
-        rb = GetComponent<Rigidbody>(); //Get the objects rigid body to store for velocity
+        startPoint = GetComponent<CookingContainer>().originalPoint; //Get whatever starting point is present for the obj then store here
     }
 
-    public void OnStartDrag()
-    {
-        Debug.Log("Dragging started");
-        rb.useGravity = false;
-    }
-    //Likely move these two to their respective scripts for the object
-    public void OnEndDrag()
-    {
-        snap();//By default at the end of dragging cause the snap
-        rb.velocity = Vector3.zero;
-        rb.useGravity = true;
-        Debug.Log("Dragging End");
-    }
-
-    public void snap() {
+    public void Snap() {
         for (int i = 0; i < snapPoints.Length; i++)
         {
             if (Vector3.Distance(snapPoints[i].transform.position, transform.position) < 1.0f) {
                 transform.position = snapPoints[i].transform.position;
             }
             else { //Set it back to the original settings
-                transform.position = originalPoint;
+                transform.position = startPoint;
             }
         }
     }

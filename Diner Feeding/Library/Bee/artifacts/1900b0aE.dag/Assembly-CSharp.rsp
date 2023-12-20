@@ -385,6 +385,7 @@
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/BasicGameEvents.cs"
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/ScreenShotHelper.cs"
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/SliceHelper.cs"
+"Assets/Scripts/CookingContainer.cs"
 "Assets/Scripts/CursorController.cs"
 "Assets/Scripts/CursorControls.cs"
 "Assets/Scripts/IDetail.cs"

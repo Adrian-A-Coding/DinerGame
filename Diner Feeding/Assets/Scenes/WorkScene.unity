@@ -2882,6 +2882,7 @@ GameObject:
   - component: {fileID: 637696153}
   - component: {fileID: 637696158}
   - component: {fileID: 637696157}
+  - component: {fileID: 637696159}
   m_Layer: 3
   m_Name: Cooking Pot1
   m_TagString: Untagged
@@ -2990,6 +2991,7 @@ MonoBehaviour:
   snapPoints:
   - {fileID: 1504917685}
   - {fileID: 409172457}
+  startPoint: {x: 0, y: 0, z: 0}
 --- !u!54 &637696158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3017,6 +3019,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &637696159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637696152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0d3ce185a8cdf4fa65d6019c22ad99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPoint: {x: 0, y: 0, z: 0}
 --- !u!43 &680035319
 Mesh:
   m_ObjectHideFlags: 0
@@ -6575,6 +6590,7 @@ GameObject:
   - component: {fileID: 1762478677}
   - component: {fileID: 1762478682}
   - component: {fileID: 1762478681}
+  - component: {fileID: 1762478683}
   m_Layer: 3
   m_Name: Cooking Pot2
   m_TagString: Untagged
@@ -6682,6 +6698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   snapPoints:
   - {fileID: 409172457}
+  startPoint: {x: 0, y: 0, z: 0}
 --- !u!54 &1762478682
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6709,6 +6726,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &1762478683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762478676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0d3ce185a8cdf4fa65d6019c22ad99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalPoint: {x: 0, y: 0, z: 0}
 --- !u!1 &1844764795
 GameObject:
   m_ObjectHideFlags: 0
