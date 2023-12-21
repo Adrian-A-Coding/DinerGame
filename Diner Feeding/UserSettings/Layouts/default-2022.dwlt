@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 93
+  controlID: 38
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,8 +268,8 @@ MonoBehaviour:
     y: 0
     width: 1227
     height: 665
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -321,7 +321,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -329,16 +329,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity Projects\DinerGame\Diner Feeding
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a8610000
-    m_LastClickedID: 25000
-    m_ExpandedIDs: 000000005e61000000ca9a3b
+    m_SelectedIDs: c0610000
+    m_LastClickedID: 25024
+    m_ExpandedIDs: 000000006461000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -366,7 +366,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005e610000
+    m_ExpandedIDs: 0000000064610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -506,23 +506,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4c600000
-      m_LastClickedID: 24652
-      m_ExpandedIDs: 2afbffff
+      m_SelectedIDs: 70f3ffff
+      m_LastClickedID: -3216
+      m_ExpandedIDs: 72f3ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Cooking Pan
+        m_OriginalName: Cooking Pan
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -13772
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -862,9 +862,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 73.87972, y: -122.56651, z: 3.8819604}
+    m_Target: {x: -5.4440904, y: 0.72869563, z: 2.350978}
     speed: 2
-    m_Value: {x: 73.87972, y: -122.56651, z: 3.8819604}
+    m_Value: {x: -5.4440904, y: 0.72869563, z: 2.350978}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -910,20 +910,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.34234616, y: -0.62010807, z: 0.3441495, w: -0.61674327}
+    m_Target: {x: -0.19581603, y: 0.6575229, z: -0.18292451, w: -0.7045771}
     speed: 2
-    m_Value: {x: -0.34225273, y: -0.61993885, z: 0.34405556, w: -0.61657494}
+    m_Value: {x: -0.19576018, y: 0.6573354, z: -0.18287234, w: -0.70437616}
   m_Size:
-    m_Target: 77.573395
+    m_Target: 2.597322
     speed: 2
-    m_Value: 77.573395
+    m_Value: 2.597322
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.0249
-    m_SpeedNormalized: 0.51
+    m_Speed: 1.0249002
+    m_SpeedNormalized: 0.5100001
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1

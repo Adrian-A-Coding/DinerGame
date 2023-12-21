@@ -6,13 +6,17 @@ public class CookingContainer : MonoBehaviour, IDetail, IDraggable
 {
     private Snapping snapper;
     private Rigidbody rb;
-    public Vector3 originalPoint;
+    private Vector3 originalPoint;
 
     private void Awake()
     {
         snapper = GetComponent<Snapping>();
         originalPoint = transform.position; //Store the objects starting location followed by rotation
         rb = GetComponent<Rigidbody>(); //Get the objects rigid body to store for velocity
+    }
+
+    public Vector3 GivePoint() {
+        return originalPoint;
     }
 
     public void DetailDisplay()

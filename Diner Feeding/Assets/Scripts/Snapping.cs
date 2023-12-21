@@ -8,7 +8,7 @@ public class Snapping : MonoBehaviour
 
     private void Awake()
     {
-        startPoint = GetComponent<CookingContainer>().originalPoint; //Get whatever starting point is present for the obj then store here
+        startPoint = GetComponent<CookingContainer>().GivePoint(); //Get whatever starting point is present for the obj then store here
     }
 
     public void Snap() {
