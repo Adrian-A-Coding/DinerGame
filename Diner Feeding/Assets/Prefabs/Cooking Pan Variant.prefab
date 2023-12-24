@@ -12,9 +12,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cooking Pan Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8700921875786522623, guid: ddf759ea98f0eb049acf66359f3be8a7, type: 3}
+      propertyPath: snapPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9106098638495561956, guid: ddf759ea98f0eb049acf66359f3be8a7, type: 3}
       propertyPath: m_LocalScale.y
-      value: -0.28953058
+      value: 0.2895306
       objectReference: {fileID: 0}
     - target: {fileID: 9106098638495561956, guid: ddf759ea98f0eb049acf66359f3be8a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54,6 +58,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9106098638495561956, guid: ddf759ea98f0eb049acf66359f3be8a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9106098638495561956, guid: ddf759ea98f0eb049acf66359f3be8a7, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

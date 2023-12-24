@@ -385,12 +385,13 @@
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/BasicGameEvents.cs"
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/ScreenShotHelper.cs"
 "Assets/CoffeeShopStarterPack/Scripts/Utilities/SliceHelper.cs"
-"Assets/Scripts/CookingContainer.cs"
+"Assets/Scripts/Cooking Utensils/CookingContainer.cs"
+"Assets/Scripts/Cooking Utensils/IDetail.cs"
+"Assets/Scripts/Cooking Utensils/IDraggable.cs"
+"Assets/Scripts/Cooking Utensils/Recipe.cs"
+"Assets/Scripts/Cooking Utensils/Snapping.cs"
 "Assets/Scripts/CursorController.cs"
 "Assets/Scripts/CursorControls.cs"
-"Assets/Scripts/IDetail.cs"
-"Assets/Scripts/IDraggable.cs"
-"Assets/Scripts/Snapping.cs"
 -langversion:9.0
 
 /deterministic
